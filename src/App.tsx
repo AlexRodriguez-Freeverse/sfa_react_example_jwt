@@ -12,10 +12,10 @@ import RPC from "./evm.ethers";
 import Loading from "./Loading";
 import "./App.css";
 
-const verifier = "product-custom-verifier";
+const verifier = "product-custom-verifier-dani";
 
 const clientId =
-  "BK6Xwpoa40meGWjvW4wqf_yO-WA_x1ZkJScFA0meRBXdqUb2UycOw5h3FO-YzwjqBEHhZ_n78VsMZ8OY3RUn_zY"; // get from https://dashboard.web3auth.io
+  "BGMWFftBHlgLhP94qDspWjAqae_Z94J49FfkhFdMeeiMpFU3O9j9uyKN_DYKwhs-Va8D350tr6eLuEEnkStasoI"; // get from https://dashboard.web3auth.io
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
@@ -76,7 +76,7 @@ function App() {
       },
     });
     const data = await res.json();
-    console.log("Tokem: " + data?.token);
+    console.log("Token: " + data?.token);
     return data?.token;
   };
 
